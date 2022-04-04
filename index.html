@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laucsap</title>
+    <script src="asset/cordzip.js"></script>
+</head>
+
+   <section id="navigation">
+    <div class="mobile-ui">
+      <div class="footer float layer02 dark item">
+
+       
+    <span class="item item-left">
+        <a onclick="page2()">
+            <i class="fa-solid fa-message"></i>
+        </a>
+    </span>
+    <span class="item">
+       <a onclick="page1()">
+        <i class="fa-solid fa-house-chimney"></i>
+       </a>
+    </span>
+    <span class="item item-right">
+        <a onclick="page3()">
+            <i class="fa-solid fa-circle-info"></i>
+        </a>
+    </span>
+        
+        </div>
+      </div>
+
+    <div class="pc-ui">
+        <div class="heading float layer02 dark ">
+    
+           
+        <span class="item">
+            <a onclick="page2()">
+                <i class="fa-solid fa-message"></i>
+            </a>
+        </span>
+        <span class="item">
+           <a onclick="page1()">
+            <i class="fa-solid fa-house-chimney"></i>
+        </a>
+        </span>
+        <span class="item">
+            <a onclick="page3()">
+                <i class="fa-solid fa-circle-info"></i></a>
+        </span>
+            
+        </div>
+    </div>
+     </section>
+
+    <section id="page1">
+
+        <div class="mobile-ui">
+
+           <div class="mid-hero center">
+
+              <div class="mid-hero dark2 rounded">
+
+                <i class="fa-solid dark-hero fa-circle-user
+                item small-m big"></i>
+
+
+               <span class="item">
+                <i class="fa-solid fa-signature"></i>
+                Laucsap</span>
+
+                  </div>
+
+           </div>
+
+        </div>
+
+        <div class="pc-ui">
+
+           <div class="hero center">
+
+            <div class="mid-hero dark">
+
+                <span class="item">
+               <span class="item item-left mid-text">
+                <i class="fa-solid fa-circle-user
+                small-m big"></i>
+
+                Imiian</span>
+
+                <span class="center small-m">
+                    <p class="small-text mid bold caps">
+                        Official Site
+                    </p>
+
+                </span>
+           </div>
+        
+        </div>
+
+        </div>
+
+    </section>
+
+    <section id="page2" class="hide">
+        
+        <div class="hero">
+            Messenger is now loading
+            <i class="fa-solid fa-cog fa-spin"
+             style="--fa-animation-duration: 6s;"></i>
+
+            <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100412152054810");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+        </div>
+    </section>
+    <section id="page3" class="hide">
+
+       <div class="hero center">
+
+          <div class="hero dark2">
+               
+            <span class="item">
+            <i class="fa-solid fa-circle-info
+            big item small-m item"></i></span>
+           
+           <span class="item mid-mb mic-text">
+            <i class="fa-solid fa-circle-question
+            small-mr"></i>
+            Who Am I?
+           </span>
+
+            <p class="small-text item">Im IIan Laucsap Cruz</p>
+            <p class="small-text item">Half US/PH & 15yo</p>
+
+           <span class="item mid-my mic-text">
+            <i class="fa-solid fa-book-open
+            small-mr"></i>
+            Skills
+           </span>
+        
+           <p class="item small-mb">-Website Dev</p>
+           <p class="item small-my">-Graphic Designer</p>
+           <p class="item small-my">-Music/Vid Prod</p>
+           <p class="item small-my">-3D & 2d Arts & Anim..</p>
+
+              </div>
+
+            
+          </div>
+
+       </div>
+
+    </section>
+    
+
+</body>
+</html>
